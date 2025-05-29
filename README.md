@@ -10,6 +10,7 @@ Streamlit-приложение для прогнозирования отказ�
 
 ## Установка
 ```bash
-git clone https://github.com/PWU3U/predictive_maintenance_project
+git clone https://github.com/DobryninIlya/final_ds_course-work.git
 cd predictive_maintenance_project
 pip install -r requirements.txt
+streamlit run app.py
