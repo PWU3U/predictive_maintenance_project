@@ -1,10 +1,10 @@
 import streamlit as st
-from streamlit_reveal_slides import slides
+import reveal_slides as rs
 
-def main():
+def presentation_page():
     st.title("Презентация проекта")
     
-    content = """
+    slides_content = """
     # Прогнозирование отказов оборудования
     
     ## Введение
@@ -22,7 +22,4 @@ def main():
     - Интерактивный интерфейс для предсказаний
     """
     
-    slides(content, height=500, theme="sky")
-
-if __name__ == "__main__":
-    main()
+    rs.slides(slides_content, theme="night", height=600)
