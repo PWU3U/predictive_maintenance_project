@@ -1,8 +1,8 @@
 import streamlit as st
 
 pages = {
-    Анализ и модель analysis_and_model.py,
-    Презентация presentation.py
+    "Анализ и модель" analysis_and_model.py,
+    "Презентация" presentation.py
 }
 
 st.sidebar.title(Навигация)
