@@ -9,7 +9,7 @@ seaborn==0.12.1
 xgboost==1.7.6
 ucimlrepo==0.0.3
 
-# Streamlit зависимости (могут потребоваться при ошибках)
+# Streamlit зависимости
 altair>=4.2.0
 pyarrow>=10.0
 protobuf>=4.0.0
