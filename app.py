@@ -1,12 +1,11 @@
 import streamlit as st
+from analysis_and_model import analysis_and_model_page
+from presentation import presentation_page
 
 pages = {
-    "Анализ и модель": "analysis_and_model.py",
-    "Презентация": "presentation.py"
+    "Анализ": analysis_and_model_page,
+    "Презентация": presentation_page
 }
 
-st.sidebar.title("Навигация")
-selection = st.sidebar.radio("Страницы", list(pages.keys()))
-
-with open(pages[selection]) as f:
-    exec(f.read(), globals())
+selected_page = st.sidebar.selectbox("Навигация", list(pages.keys()))
+pages[selected_page]()
